@@ -7,13 +7,14 @@
 /* normal css to big screens, media queries to medium and small */
 html{
     font-family: sans-serif;
+    background-color: #eeeeee;
 }
 a{
     color: inherit;
     text-decoration: none;
     
 }
-a:hover{
+header a:hover{
     color: #fff;
     transition: all 0.2s;
 }
@@ -31,7 +32,7 @@ header{
     
 }
 header nav{
-    padding: 20px 0 ;
+    padding: 20px 0;
     overflow: hidden;
 }
 header nav img{
@@ -49,7 +50,7 @@ header nav ul{
     font-size: 20px;
     color: rgba(160, 75, 30,0.8);
     float: right;
-    margin-top:5px;
+    margin-top: 5px;
 }
 a.login{
     border: 2px solid #fff;
@@ -75,12 +76,12 @@ header article .articleContent{
     margin-top: auto;
     margin-bottom: auto;
 }
-h1.title{
+header h1.title{
     margin: 0;
     font-size: 60px;
     line-height: 1.2em;
 }
-h2.subtitle{
+header h2.subtitle{
     font-size: 20px;
 }
 
@@ -123,4 +124,119 @@ header article span:hover{
 header article span:hover{
     transition: all 0.2s;
     background-color: #fff;
+}
+
+
+
+/* mainArticle sections */
+
+section{
+    display: flex;
+    
+}
+
+section h1.title{
+    margin: 0;
+    font-size: 35px;
+    line-height: 1.2em;
+    font-weight: 600;
+}
+section h2.subtitle{
+    font-size: 20px;
+}
+.buttonSeeMore{
+    display: block;
+    padding: 8px 0;
+    width: 100px;
+    background-color: blue;
+    color: #fff;
+    text-align: center;
+    border-radius: 3px;
+}
+.buttonSeeMore:hover{
+    transition: all 0.2s;   
+    font-weight: 600;
+}
+
+
+#firstSection{
+    height: 500px;
+    background: url("../img/saiba.png") no-repeat ;
+    background-position: 90% 50%;
+    background-size: 500px ;
+}
+#secondSection{
+    height: 750px;
+    background: url("../img/juros.png") no-repeat ;
+    background-position: 10% 50%;
+    background-size: 500px;
+}
+
+
+.sectionLeft{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    flex-direction: column;
+    padding-left: 5%;
+}
+.sectionRight{
+    margin-left: auto;
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    flex-direction: column;
+    padding-left: 5%;
+}
+#cardsSection{
+    padding: 0 5%;
+}
+.card{
+    margin-top: 20px;
+    width: 33%;
+    height: 350px;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    padding: 0 5px;
+}
+.card h1.title{
+    font-size: 20px;
+    font-weight: 600;
+}
+.card h2.subtitle{
+    font-size: 16px;
+}
+.firstCard{
+    background: url("../img/facil.png") no-repeat;
+    background-size: 300px;
+}
+.secondCard{
+    background: url("../img/economize.png") no-repeat;
+    background-size: 300px;
+}
+.thirdCard{
+    background: url("../img/suporte.png") no-repeat;
+    background-size: 300px;
+}
+
+footer{
+    height: 50px;
+    margin: 0;
+}
+
+footer nav{
+    display: inline;
+    color: rgb(0, 81, 255);
+    font-weight: 600;
+}
+footer nav ul{
+    list-style-type: none;
+}
+footer nav ul li{
+    display: inline;
+    margin-right: 10px;
+}
+footer a:hover{
+    border-bottom: 2px solid rgb(0, 81, 255);;
 }
