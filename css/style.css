@@ -20,7 +20,7 @@ a::after{
     color: inherit;
 }
 header{
-    height: 600px;
+    min-height: 600px;
     background: url("../img/capa-mulher.png") no-repeat ;
     background-position: 70% 100%;
     background-color: #ffc107;
@@ -36,27 +36,67 @@ header nav{
     padding: 20px 0;
     overflow: hidden;
     display: flex;
+    flex-wrap: wrap;
 }
 header nav img{
-    display: block;
     height: 50px;
     display: inline;
 }
+#colapse{
+    background-color: transparent;
+    color: rgba(100, 50, 20, 0.8);;
+    vertical-align: middle;
+    border: 1px solid rgba(100, 50, 20,0.5);
+    border-radius: 3px;
+    cursor: pointer;
+    padding: 4px 10px;
+    height: 40px;
+}
+.break{
+    flex-basis: 100%;
+    width: 0px; 
+    height: 0px; 
+    overflow: hidden;
+}
+.navItem{
+    /* display:inline */
+    display: block;
+}
+.navBig{
+    display: inline;
+    padding: 8px;
+}
 header nav ul a{
     line-height: 20px;
-    padding: 8px 8px;
+    /* padding: 8px 8px; */
+    padding: 8px 0px;
 }
 header nav ul{
-    display: block;
-    margin-left: auto;
+    /* display:inline */
+    transition: max-height 0.2s ease-out;
+    max-height: 0;
+    display: block; 
+    /* margin-left: auto */
+    overflow: hidden;
+    padding: 0;
     font-size: 20px;
     color: rgba(160, 75, 30,0.8);
     margin-top: 5px;
+}
+header nav .ulBig{
+    max-height: 200px;
+    display: block;
+    margin-left: auto;
+    overflow: initial;
 }
 a.login{
     border: 2px solid #fff;
     border-radius: 3px;
     color: #fff;
+    text-align: center;
+    /* margin-left: 20px; */
+}
+a.login.loginBig{
     margin-left: 20px;
 }
 a.login:hover{
@@ -354,17 +394,16 @@ footer a:hover{
         padding: 16px 0;
     }
     header nav img{
-
         height: 40px;
     }
     header nav ul a{
-        padding: 8px 4px;
+        padding: 8px 4px!important;;
     }
     header nav ul{
-        font-size: 16px;
+        font-size: 16px!important;;
     }
-    header nav ul a.login{
-        margin-left: 5px;
+    .login{
+        margin-left: 5px!important;
     }
 
 

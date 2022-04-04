@@ -14,13 +14,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
-
-
-
-
-
-
-    <title>Document</title>
+    <title>Finans</title>
 </head>
 <body>
     <!-- textos do site em português, o resto em inglês. 2022. -->
@@ -28,12 +22,20 @@
         <div class="container">
         <nav id="headerNav">
             <a href="index.html"><img src="img/logo.png" alt="finans" ></a>
-            <ul class="bigNav">
-                <a href="index.html">Home</a>
-                <a href="recursos.html">Recursos</a>
-                <a href="beneficios.html">Benefícios</a>
-                <a href="precos.html">Preços</a>
-                <a href="entrar.html" class="login">Entrar</a>
+            <button id="colapse" style="margin-left: auto;" onclick="colapse()">
+                <span class="material-icons">
+                menu
+                </span>
+            </button>
+            <div class="break" id="break"></div>
+            <ul id="ulNav" class="">
+                
+                <a href="index.html" class="navItem">Home</a>
+                <a href="recursos.html" class="navItem">Recursos</a>
+                <a href="beneficios.html" class="navItem">Benefícios</a>
+                <a href="precos.html" class="navItem">Preços</a>
+                <a href="entrar.html"  id="loginButton" class="login navItem">Entrar</a>
+                
             </ul>
         </nav>
 
